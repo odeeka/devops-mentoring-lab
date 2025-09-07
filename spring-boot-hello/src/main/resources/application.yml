@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+
+# For resource filtering (enabled in POM):
+app:
+  version: "@project.version@"
